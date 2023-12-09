@@ -1,7 +1,3 @@
-# Catalogador
-🔠 - Pratica Profissional - Catalogador de Personagens
-
-
 <h1 align="center">
   <p align="center">Catalogador de Personagens</p>
   <h3> Este repositório contém o site Catalogador de Personagens, para o projeto da disciplina "Prática Profissional II". Este site foi escrito na linguagem JavaScript, usa o interpretador node.js e o banco de dados MongoDB .</h3>
