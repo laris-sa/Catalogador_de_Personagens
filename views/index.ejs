@@ -1,0 +1,26 @@
+<!-- views/index.ejs -->
+
+<link rel="stylesheet" href="/stylesheets/style.css">
+<%- include('./partials/header.ejs') %>
+
+<section>
+  <div class="capas-personagem">
+  <% personagens.forEach(p => { %>
+      <div class="capa" name="<%- p.nome %>">
+        <a href="<%- '/personagem/' + p.rota %>" target="_self">
+          <img src="public/images/<%- p.imagem %>" alt="<%- p.alt %>">
+          <h5><%- p.nome %></h5>
+          <%- include('./partials/stars.ejs') %>
+
+        </a>
+      </div>
+  <% }) %>
+    </div>
+</section>
+
+<section>
+  <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>
+

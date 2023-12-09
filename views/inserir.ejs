@@ -1,0 +1,66 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Personagem</title>
+</head>
+<body>
+    <h1>Cadastro de Personagem</h1>
+    <form id="characterForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+
+        <label for="ocupacao">Ocupação:</label>
+        <input type="text" id="ocupacao" name="ocupacao" required>
+
+        <label for="residencia">Residência:</label>
+        <input type="text" id="residencia" name="residencia" required>
+
+        <label for="personalidade">Personalidade:</label>
+        <input type="text" id="personalidade" name="personalidade" required>
+
+        <label for="hobbies">Hobbies/Interesses/Habilidades:</label>
+        <input type="text" id="hobbies" name="hobbies" required>
+
+        <label for="amigos">Amigo(s):</label>
+        <input type="text" id="amigos" name="amigos" required>
+
+        <label for="imagem">Imagem URL:</label>
+        <input type="text" id="imagem" name="imagem" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('characterForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const formDataObject = {};
+            formData.forEach((value, key) => {
+                formDataObject[key] = value;
+            });
+
+            fetch('/caminhEndpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formDataObject),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Resposta do servidor:', data);
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+            });
+        });
+    </script>
+</body>
+</html>

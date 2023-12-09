@@ -1,0 +1,121 @@
+body{
+  font-family: sans-serif;
+  background-color: #000000;
+  color: white
+  margin: 0px;
+}
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.box {
+width: 300px;
+height: 300px;
+background: #fff;
+}
+
+.capas-personagem{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 60px;
+}
+
+.capa{
+  margin: 0 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #ffb800;
+  text-align: left;
+  font-size: 20px;
+  transition: filter 0.3s ease; 
+}
+
+.rating{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.capa img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  filter: brightness(0.7);
+}
+
+.capa:hover img {
+  filter: brightness(1); 
+}
+
+.capa:hover {
+  background-color: #ffb800; 
+  color: #000000;
+  padding: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10%;
+}
+
+.capa a {
+  color: #ffb800;
+  text-decoration: none;
+
+}
+
+.capa:hover a {
+  color: #000000;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffb800;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+}
+
+.capa:hover .star {
+  color: #000000;
+}
+
+
+.post-personagem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.post{
+  color: #ffb800;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.post img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.post h6{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:#e3d9d9;
+}

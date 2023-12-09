@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+    <div class="post-personagem">
+      <div class="post">
+        <img src="/images/leonKennedy.webp" alt="Leon Kennedy">
+          <h1>Leon Kennedy</h1>
+          <div class="marcadores">
+              <span class="categoriaJogo">Jogo</span>
+              <span class="origem">Resident Evil</span>
+          </div>
+                  <h5>Descrição ficcional</h5>
+                  <h6>Nome completo:  Leon Scott Kennedy</h6>
+                  <h6>Idade: Entre 20 a 30 anos </h6>
+                  <h6>Ocupação: Trabalha na Divisão de Operações Especiais (SOG) da R.P.D. (Raccoon<br> City Police Department) e mais tarde como um agente do governo dos Estados Unidos. </h6>
+                  <h6>Residência:  Não tem uma residência fixa.</h6>
+                  <h6>Personalidade: Determinação, habilidades de tiro e capacidade de manter a calma<br> em situações de grande perigo </h6>
+                  <h6>Hobbies/interesses: Tiro ao alvo </h6>
+                  <h6>Amigo(s): Claire Redfield, Ada Wong e Chris Redfield </h6>
+          </div>
+
+          <div class="post" data-post-id="32">
+              <div id="formulario-comentario">
+                <form>
+                  <h3>Avaliar personagem</h3>
+                  <% include('./partials/stars.ejs') %>
+                  <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                  <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="comentarios-title">
+                  <h3>Comentários</h3>
+                  <div class="lista-comentarios"></div>
+              </div>
+          </div>
+    </div>
+
+    <div class="personagensRelacionados">
+          <h4>Personagens Relacionados</h4>
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+    </div>
+
+</section>
+
+<section>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>

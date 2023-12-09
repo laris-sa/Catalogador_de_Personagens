@@ -1,0 +1,379 @@
+body{
+  font-family: sans-serif;
+  background-color: #000000;
+  color: white
+  margin: 0px;
+}
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding:40px;
+}
+
+.capas-personagem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.capa {
+  text-align: center;
+}
+
+.capa img {
+  max-width: 100%;
+  height: auto;
+}
+
+h5 {
+  margin: 5px 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+}
+
+
+.rating {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.capa img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  filter: brightness(0.7);
+}
+
+.capa:hover img {
+  filter: brightness(1);
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+}
+
+.capa:hover {
+  background-color: #ffb800;
+  color: #000000;
+  padding: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10%;
+}
+
+.capa a {
+  color: #ffb800;
+  text-decoration: none;
+}
+
+.capa:hover a {
+  color: #000000;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffb800;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.capa:hover .star {
+  color: #000000;
+}
+
+
+.post-personagem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.post{
+  color: #ffb800;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.post img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.post h6{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:#e3d9d9;
+}
+
+.footer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+
+}
+
+
+
+.filmes {
+  color: white;
+}
+
+.jogos {
+  color: white;
+}
+
+.livros {
+  color: white;
+}
+
+.series {
+  color: white;
+}
+
+
+
+
+/*página de login */
+.login-container {
+    font-family: sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: #ffb800;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a h5{
+  margin-top: 10px;
+}
+
+button {
+    background-color: #ffb800;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f5ecec;
+}
+
+.login-box-wrapper {
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+/* Estilo para a página de recuperação de senha */
+.login-container {
+    font-family: sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: #ffb800;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #ffb800;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f5ecec;
+}
+
+.login-box-wrapper {
+    background-color: #1c1c1c;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+/*criarConta*/
+.create-account-container {
+    font-family: sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.create-account-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: #ffb800;
+    font-size: 18px;
+}
+
+button {
+    background-color: #ffb800;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f5ecec;
+}
+
+.create-account-box-wrapper {
+    background-color: #1c1c1c; 
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+}
+

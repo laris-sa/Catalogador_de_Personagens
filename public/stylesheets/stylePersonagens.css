@@ -1,0 +1,238 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.post-personagem {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 20px;
+  margin-top: -70px;
+  background-color: #1c1c1c;
+  border-radius: 5px;
+}
+
+.post img{
+  /*border: 1px solid #000000*/
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.post h1{
+  color: #ffb800;
+  margin-top: 10px;
+}
+
+/*comentários*/
+
+.comentarios-title  {
+  border: 1px solid #000000;
+  background-color: #121212;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.lista-comentarios h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.lista-comentarios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-comentarios .comentario {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+.lista-comentarios .comentario strong {
+  color: #ffb800;
+}
+
+.lista-comentarios .comentario a.responder {
+  color: #ffb800;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.lista-comentarios .comentario a.responder:hover {
+  color: #f5ecec;
+}
+
+#formulario-comentario {
+  border: 1px solid #000000;
+  background-color: #121212;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+#formulario-comentario h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#formulario-comentario input[type="text"],
+#formulario-comentario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#formulario-comentario button[type="submit"] {
+  background-color: #ffb800;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#formulario-comentario button[type="submit"]:hover {
+  background-color: #f5ecec;
+  color: black;
+}
+
+.lista-comentarios .comentario .data {
+  font-size: 12px; 
+  color: gray; 
+}
+
+.lista-comentarios .comentario .hora {
+  font-size: 12px; 
+  color: gray; 
+}
+
+/*personagens relacionados*/
+.personagensRelacionados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: -70px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #1c1c1c;
+  border-radius: 5px;
+}
+
+.personagensRelacionados h4{
+  padding: 10px;
+  color:#ffb800;
+  text-decoration: none;
+}
+
+.relacionados{
+  padding: 10px;
+}
+
+.relacionados img {
+  /*border: 1px solid #000000;*/
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  filter: brightness(0.7);
+}
+
+.relacionados:hover img {
+  filter: brightness(1);
+}
+
+.relacionados:hover {
+  background-color: #ffb800;
+  color: #000000;
+  padding: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10%;
+}
+
+.relacionados a {
+  color: #ffb800;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.relacionados:hover a {
+  color: #000000;
+}
+
+.relacionados h6{
+  padding:4px;
+}
+
+/*Marcadores*/
+.marcadores {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.categoriaFilme {
+  background-color: #98befb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+.categoriaJogo {
+  background-color: #a898fb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.categoriaLivro {
+  background-color: #fa98fb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.categoriaSerie {
+  background-color: #fbeb98;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.origem {
+  background-color: #a3fb98;
+  padding: 5px 10px;
+  border-radius: 5px; 
+  font-weight: bold; 
+  margin-right: 10px;
+}
+
+.post h5 {
+  font-size: 1.2rem; 
+  color: #ffb800; 
+  margin-top: 20px; 
+  text-decoration: underline;
+}
+
+.post h6 {
+  font-size: 1rem; 
+  margin-top: 10px;
+}

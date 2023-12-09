@@ -1,0 +1,28 @@
+
+#footer_content {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff; 
+  background-color: #000000;
+  padding: 10px; 
+}
+
+.footer_li {
+  list-style-type: none;
+  padding:20px;
+  text-align:right;
+}
+
+.footer_h1 {
+  color: #ffffff; /* Cor do texto preto */
+  padding:10px;
+  text-align:right;
+
+}
+
+.direitos {
+  text-align: right;
+  color: #ffb800; /* Cor do texto preto */
+}
+
+/* Adicione outros estilos conforme necessário */

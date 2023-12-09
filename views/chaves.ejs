@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+    <div class="post-personagem">
+      <div class="post">
+        <img src="/images/chaves.png" alt="Chaves">
+          <h1>Chaves</h1>
+          <div class="marcadores">
+              <span class="categoriaSerie">Série</span>
+               <span class="origem">Chaves</span>
+          </div>
+                  <h5>Descrição ficcional</h5>
+                  <h6>Nome: Chaves (Seu nome verdadeiro é desconhecido) </h6>
+                  <h6>Idade: Entre 8 e 10 anos </h6>
+                  <h6>Ocupação: Estudante do primário</h6>
+                  <h6>Residência: Baril no pátio da vila </h6>
+                  <h6>Personalidade: Curioso, inocente, travesso, imaginativo, bom coração </h6>
+                  <h6>Hobbies/interesses: Brincar com seus amigos na vila</h6>
+                  <h6>Amigo(s): Quico(Kiko), Chiquinha, Nhonho</h6>
+          </div>
+
+          <div class="post" data-post-id="11">
+              <div id="formulario-comentario">
+                <form>
+                  <h3>Avaliar personagem</h3>
+                  <% include('./partials/stars.ejs') %>
+                  <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                  <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="comentarios-title">
+                  <h3>Comentários</h3>
+                  <div class="lista-comentarios"></div>
+              </div>
+          </div>
+    </div>
+
+    <div class="personagensRelacionados">
+          <h4>Personagens Relacionados</h4>
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+    </div>
+
+</section>
+
+<section>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogador de Personagens</title>
+    <link rel="stylesheet" href="/stylesheets/stylemenu.css">
+    <script type="text/javascript" src="/public/javascripts/pesquisa.js"></script>
+</head>
+<body>
+
+  <header>  
+<div id="menu">
+    <nav>
+        <div class="menu-btn">      
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <div class="logo">
+        <h2>Catalogador de Personagens</h2>
+        </div>
+
+        <div id="conteudo"></div>
+        <ul>
+
+        <li> <a href="/" target="_parent" class="active" > Destaques </a></li>
+        <li><a href="/filmes" target="_parent" >Filmes</a></li>
+        <li><a href="/jogos" target="_parent">Jogos</a></li>
+        <li><a href="/livros" target="_parent" >Livros</a></li>
+        <li><a href="/series" target="_parent" >Séries</a></li>
+        <li><a href="/login" target="_parent" >Login</a></li>
+
+          <li><div>
+            <input type="text" placeholder="Pesquisar" id="texto-pesquisa" onkeyup="pesquisarPersonagem()"/>
+          </div></li>
+
+        </ul>
+    </nav>
+</div>
+
+  </header>
+

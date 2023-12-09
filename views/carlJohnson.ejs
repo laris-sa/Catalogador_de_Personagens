@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+    <div class="post-personagem">
+      <div class="post">
+        <img src="/images/CarlJohnson.jpg" alt="Carl Johnson">
+          <h1>CarlJohnson</h1>
+          <div class="marcadores">
+              <span class="categoriaJogo">Jogo</span>
+              <span class="origem">Grand Theft Auto: San Andreas</span>
+          </div>
+                 <h5>Descrição ficcional</h5>
+                 <h6>Nome completo: Carl Johnson</h6>
+                 <h6>Idade: 24 anos</h6>
+                 <h6>Ocupação: gângster</h6>
+                 <h6>Residência: Groove Street, Los Santos, San Andreas</h6>
+                 <h6>Personalidade: possui um pouco de ingenuidade, torna-se violento se for para<br> defender sua família ou gangue, assassino profissional</h6>
+                 <h6>Hobbies/interesses: ajudar no crescimento de sua gangue</h6>
+                 <h6>Amigo(s): Cesar Vialpando, The Truth, Wu Zi Mu, Zero, Mad Dogg,<br> Ryder (anteriormente), Big Smoke (anteriormente)</h6>
+          </div>
+
+          <div class="post" data-post-id="9">
+              <div id="formulario-comentario">
+                <form>
+                  <h3>Avaliar personagem</h3>
+                  <% include('./partials/stars.ejs') %>
+                  <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                  <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="comentarios-title">
+                  <h3>Comentários</h3>
+                  <div class="lista-comentarios"></div>
+              </div>
+          </div>
+    </div>
+
+    <div class="personagensRelacionados">
+          <h4>Personagens Relacionados</h4>
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+    </div>
+
+</section>
+
+<section>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>

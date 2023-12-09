@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+    <div class="post-personagem">
+      <div class="post">
+        <img src="/images/anarquia.png" alt="Anarquia">
+          <h1>Anarquia</h1>
+          <div class="marcadores">
+              <span class="categoriaFilme">Filme</span>
+              <span class="categoriaLivro">Livro</span>
+              <span class="origem">Batman</span>
+          </div>
+                  <h5>Descrição ficcional</h5>
+                  <h6>Nome: Lonnie Machin </h6>
+                  <h6>Idade: Aproximadamente 20 anos</h6>
+                  <h6>Ocupação: Terrorista urbano, ativista anti-governamental</h6>
+                  <h6>Residência:  Gotham City, EUA </h6>
+                  <h6>Personalidade: Complexo com uma mente brilhante e ideais extremistas</h6>
+                  <h6>Hobbies/interesses: Especialista em computadores e sistemas de segurança, tendo grande</br> habilidade em invadir e hackear informações.</h6>
+                  <h6>Amigo(s): Não especificado </h6>
+          </div>
+
+          <div class="post" data-post-id="2">
+              <div id="formulario-comentario">
+                <form>
+                  <h3>Avaliar personagem</h3>
+                  <% include('./partials/stars.ejs') %>
+                  <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                  <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="comentarios-title">
+                  <h3>Comentários</h3>
+                  <div class="lista-comentarios"></div>
+              </div>
+          </div>
+    </div>
+
+    <div class="personagensRelacionados">
+          <h4>Personagens Relacionados</h4>
+            <div class="relacionados">
+                <a href="/personagem/batman" target="_self">
+                <img src="/images/batman.png" alt="Personagem 1">
+                <h6>Batman</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="/personagem/coringa" target="_self">
+                <img src="/images/coringa.png" alt="Personagem 2">
+                <h6>Coringa</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="/personagem/duasCaras" target="_self">
+                <img src="/images/duasCaras.png" alt="Personagem 3">
+                <h6>Duas Caras</h6>
+                </a>
+            </div>
+    </div>
+
+</section>
+
+<section>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+  <div class="post-personagem">
+    <div class="post">
+      <img src="/images/YorForger.png" alt="Yor Forger">
+        <h1>Yor Forger</h1>
+        <div class="marcadores">
+            <span class="categoriaSerie">Série</span>
+            <span class="origem">Spy x Family</span>
+        </div>
+                <h5>Descrição ficcional</h5>
+                 <h6>Nome completo: Yor Forger</h6>
+                 <h6>Idade:36 anos</h6>
+                 <h6>Ocupação: Dona de casa/Assassina disfarçada</h6>
+                 <h6>Residência: : Vive em um apartamento simples em um bairro de classe média<br> da cidade</h6>
+                 <h6>Personalidade: Yor é uma mulher carismática e amigável, sempre disposta a<br> ajudar os outros. Ela é inteligente e possui uma habilidade única de se disfarçar<br> de diferentes personas.</h6>
+                 <h6>Hobbies/interesses/habilidades:Yor adora cozinhar e é uma excelente pianista.<br> Além disso, ela tem um talento natural para se transformar em diferentes<br> personagens e usar isso a seu favor em missões. </h6>
+                 <h6>Amigo(s):Yor tem uma amiga próxima chamada Mia, que é uma cabeleireira.</h6>
+        </div>
+
+        <div class="post" data-post-id="49">
+            <div id="formulario-comentario">
+              <form>
+                <h3>Avaliar personagem</h3>
+                <% include('./partials/stars.ejs') %>
+                <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+
+            <div class="comentarios-title">
+                <h3>Comentários</h3>
+                <div class="lista-comentarios"></div>
+            </div>
+        </div>
+  </div>
+
+  <div class="personagensRelacionados">
+        <h4>Personagens Relacionados</h4>
+          <div class="relacionados">
+              <a href="/personagem/anyaForger" target="_self">
+              <img src="/images/anyaForger.jpg" alt="Personagem 1">
+              <h6>Anya Forger</h6>
+              </a>
+          </div>
+
+          <div class="relacionados">
+              <a href="/personagem/damianDesmond" target="_self">
+              <img src="/images/damianDesmond.png" alt="Personagem 2">
+              <h6>Damian Desmond</h6>
+              </a>
+          </div>
+
+          <div class="relacionados">
+              <a href="/personagem/loidForger" target="_self">
+              <img src="/images/LoidForger.png" alt="Personagem 3">
+              <h6>Loid Forger</h6>
+              </a>
+          </div>
+  </div>
+
+</section>
+
+<section>
+  <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>

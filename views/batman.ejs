@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+    <div class="post-personagem">
+      <div class="post">
+        <img src="/images/batman.png" alt="Batman">
+          <h1>Batman</h1>
+          <div class="marcadores">
+               <span class="categoriaFilme">Filme</span>
+               <span class="origem">Batman - O Cavaleiro das Trevas</span>
+               <span class="origem">The Batman</span>
+               <span class="origem">Liga Da Justiça</span>
+          </div>
+                  <h5>Descrição ficcional</h5>
+                  <h6>Nome: Bruce Wayne </h6>
+                  <h6>Idade:  Varia ao longo dos filmes, mas aproximadamente 30-40 anos na maioria das adaptações</h6>
+                  <h6>Ocupação: CEO das Empresas Wayne, vigilante noturno</h6>
+                  <h6>Residência:  Gotham City, EUA </h6>
+                  <h6>Personalidade: Sombria, corajosa, astuta, um pouco solitária</h6>
+                  <h6>Hobbies/interesses:Investigação, artes marciais, desenvolvimento de tecnologia</h6>
+                  <h6>Amigo(s): Alfred Pennyworth, Jim Gordon, Mulher-Gato (Selina Kyle)</h6>
+          </div>
+
+          <div class="post" data-post-id="5">
+              <div id="formulario-comentario">
+                <form>
+                  <h3>Avaliar personagem</h3>
+                  <% include('./partials/stars.ejs') %>
+                  <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                  <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="comentarios-title">
+                  <h3>Comentários</h3>
+                  <div class="lista-comentarios"></div>
+              </div>
+          </div>
+    </div>
+
+    <div class="personagensRelacionados">
+          <h4>Personagens Relacionados</h4>
+            <div class="relacionados">
+                <a href="/personagem/anarquia" target="_self">
+                <img src="/images/anarquia.png" alt="Personagem relacionado">
+                <h6>Anarquia</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="/personagem/coringa" target="_self">
+                <img src="/images/coringa.png" alt="Personagem relacionado">
+                <h6>Coringa</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="/personagem/duasCaras" target="_self">
+                <img src="/images/duasCaras.png" alt="Personagem relacionado">
+                <h6>Duas Caras</h6>
+                </a>
+            </div>
+    </div>
+
+</section>
+
+<section>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>

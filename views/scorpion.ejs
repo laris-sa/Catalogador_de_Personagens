@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+    <div class="post-personagem">
+      <div class="post">
+        <img src="/images/Scorpion.webp" alt="Scorpion">
+          <h1>Scorpion</h1>
+          <div class="marcadores">
+              <span class="categoriaJogo">Jogo</span>
+              <span class="origem">Franquia e série de jogos eletrônicos Mortal Kombat</span>
+          </div>
+                  <h5>Descrição ficcional</h5>
+                  <h6>Nome completo: 波佐志 半蔵 (<i>Hasashi Hanzo</i>)</h6>
+                  <h6>Idade: 32 anos/~50 anos em MKX</h6>
+                  <h6>Ocupação: ninja</h6>
+                  <h6>Residência: Earthrealm</h6>
+                  <h6>Personalidade: colérico, possui senso de honra</h6>
+                  <h6>Hobbies/interesses: buscar vingança contra Sub-Zero</h6>
+                  <h6>Amigo(s): </h6>
+          </div>
+
+          <div class="post" data-post-id="45">
+              <div id="formulario-comentario">
+                <form>
+                  <h3>Avaliar personagem</h3>
+                  <% include('./partials/stars.ejs') %>
+                  <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                  <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="comentarios-title">
+                  <h3>Comentários</h3>
+                  <div class="lista-comentarios"></div>
+              </div>
+          </div>
+    </div>
+
+    <div class="personagensRelacionados">
+          <h4>Personagens Relacionados</h4>
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+    </div>
+
+</section>
+
+<section>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>

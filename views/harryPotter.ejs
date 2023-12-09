@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/stylesheets/stylePersonagens.css">
+<link rel="stylesheet" href="/stylesheets/stylemenu.css">
+<link rel="stylesheet" href="/stylesheets/styleFooter.css">
+<script src="public/javascripts/script.js"></script>
+<%- include('./partials/header.ejs') %>
+
+<section>
+    <div class="post-personagem">
+      <div class="post">
+        <img src="/images/HarryP.png" alt="Bart">
+          <h1>Bart Simpson</h1>
+          <div class="marcadores">
+              <span class="categoriaFilme">Filme</span>
+              <span class="categoriaLivro">Livro</span>
+              <span class="origem">Harry Potter</span>
+          </div>
+                    <h5>Descrição ficcional</h5>
+                    <h6>Nome completo: Harry Potter</h6>
+                    <h6>Idade: 17 anos (no último livro da série)</h6>
+                    <h6>Ocupação: Estudante de bruxaria e membro da Ordem da Fênix</h6>
+                    <h6>Residência:Rua dos Alfeneiros, nº 4, Godric's Hollow </h6>
+                    <h6>Personalidade: Corajoso, leal, audacioso, determinado, ocasionalmente impulsivo</h6>
+                    <h6>Hobbies/interesses: Jogar Quadribol, estudar feitiços e defender os amigos </h6>
+                    <h6>Amigo(s): Ron Weasley, Hermione Granger, Neville Longbottom, Luna Lovegood </h6>
+          </div>
+
+          <div class="post" data-post-id="25">
+              <div id="formulario-comentario">
+                <form>
+                  <h3>Avaliar personagem</h3>
+                  <% include('./partials/stars.ejs') %>
+                  <input type="text" id="nome" class="nome" placeholder="Seu nome" required>
+                  <textarea id="comentario" class="comentario" placeholder="Seu comentário" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="comentarios-title">
+                  <h3>Comentários</h3>
+                  <div class="lista-comentarios"></div>
+              </div>
+          </div>
+    </div>
+
+    <div class="personagensRelacionados">
+          <h4>Personagens Relacionados</h4>
+            <div class="relacionados">
+                <a href="/personagem/dobby" target="_self">
+                <img src="/images/Dobby.png" alt="Personagem relacionado">
+                <h6>Dobby</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+
+            <div class="relacionados">
+                <a href="" target="_self">
+                <img src="" alt="Personagem relacionado">
+                <h6>-</h6>
+                </a>
+            </div>
+    </div>
+
+</section>
+
+<section>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+</section>
+</body>
+</html>
