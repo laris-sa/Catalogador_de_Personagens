@@ -14,19 +14,12 @@
 <p> <br>Jadise Lane Silva dos Santos</br>
 <p> <br>Larissa dos Santos Holanda</br>
  
- 
  </p>
   </details>
-  
   <details><summary><b>Contato</b></summary>
  <p>
-<br>davi.alves.macedo08@aluno.ifce.edu.br</br>
-<br>jadise.lane.silva62@aluno.ifce.edu.br</br>
-<br>larissa.holanda11@aluno.ifce.edu.br</br>
+<br>davi.alves.macedo08@aluno.ifce.edu.br</br> <a href="https://github.com/davialves11" target="_blank">github.com/davialves11</a>
+<br>jadise.lane.silva62@aluno.ifce.edu.br</br> <a href="https://github.com/jjjadise" target="_blank">github.com/jjjadise</a>
+<br>larissa.holanda11@aluno.ifce.edu.br</br> <a href="https://github.com/larissahol" target="_blank">github.com/larissahol</a>
 
- </p>
-  </details>
-  
-  <h2> Agradecimentos</h2>
-<p></p>
- <p>  Agradecemos qualquer feedback sobre quaisquer modificações que possam ser feitas para otimizar este aplicativo.</p>
+
