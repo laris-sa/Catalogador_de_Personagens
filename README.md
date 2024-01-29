@@ -19,7 +19,7 @@
   <details><summary><b>Desenvolvedores</b></summary>
 <a href="https://github.com/davialves11" target="_blank">Davi Alves Macêdo</a> - davi.alves.macedo08@aluno.ifce.edu.br</br></br>
 <a href="https://github.com/jjjadise" target="_blank">Jadise Lane Silva dos Santos</a> - jadise.lane.silva62@aluno.ifce.edu.br</br></br>
-<a href="https://github.com/larissahol" target="_blank">Larissa dos Santos Holanda</a> - larissa.holanda11@aluno.ifce.edu.br</br></br>
+<a href="https://github.com/laris-sa" target="_blank">Larissa dos Santos Holanda</a> - larissa.holanda11@aluno.ifce.edu.br</br></br>
 
  
  </p>
